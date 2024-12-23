@@ -4,7 +4,7 @@
 ## 소개  
 이 repository는 제가 학부 졸업논문을 작성할 때 사용한 LaTeX 소스코드를 포함하고 있습니다. **2024년도 기준 서울대학교 컴퓨터공학부 졸업논문 양식** 중 외국어 본문 기준을 참고하여, 제가 개인적으로 제작한 비공식 자료입니다. LaTeX으로 논문을 작성하고자 하는 사람들에게 참고 자료로 도움이 되길 바랍니다.  
 
-제 졸업논문은 [arXiv](https://arxiv.org/abs/2412.15295)에 게시되어 있으며, 이 repository의 `thesis.pdf` 파일에서 LaTeX 소스를 컴파일한 결과물을 확인하실 수 있습니다.  
+제 졸업논문은 [arXiv](https://arxiv.org/abs/2412.15295)에 게시되어 있으며, 이 repository의 [`thesis.pdf`](https://github.com/SyphonArch/snucse-thesis/blob/main/thesis.pdf) 파일에서 LaTeX 소스를 컴파일한 결과물을 확인하실 수 있습니다.  
 
 ## 주의  
 **졸업논문을 작성하는 시점의 학부 졸업논문 양식을 우선적으로 참고하시기 바랍니다.**
