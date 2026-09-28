@@ -73,3 +73,42 @@
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{1em}
+
+% Abstract page layout
+% Title block and author block for the English abstract
+\newcommand{\EnglishAbstractHeader}{%
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\vspace*{-1.1cm}
+{
+\centering
+\fontsize{22pt}{22pt}\selectfont \ThesisTitle: \\
+\fontsize{18pt}{20pt}\selectfont \ThesisSubtitle \\
+}
+
+\vspace*{0.8cm}
+
+{
+\flushright
+\fontsize{14pt}{16pt}\selectfont
+\AuthorEn \\
+Computer Science and Engineering \\ 
+College of Engineering \\
+Seoul National University \\
+}
+\vspace*{0.8cm}
+}
+
+\newcommand{\KoreanAbstractHeader}{%
+\chapter*{국문초록}
+\addcontentsline{toc}{chapter}{국문초록}
+}
+
+% Keywords line at the bottom of each abstract
+\newcommand{\EnglishKeywords}[1]{%
+\vfill
+\textbf{Keywords: #1}}
+
+\newcommand{\KoreanKeywords}[1]{%
+\vspace*{1cm}
+\textbf{주요어: #1}}
