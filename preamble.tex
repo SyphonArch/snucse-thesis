@@ -15,9 +15,9 @@
 \usepackage{etoolbox} % Required for patching commands
 
 % PDF Metadata
-\usepackage[pdfauthor={현재익},
-            pdftitle={Log-Time K-Means Clustering for 1D Data},
-            pdfsubject={Log-Time K-Means Clustering for 1D Data: Novel Approaches with Proof and Implementation},
+\usepackage[pdfauthor={\AuthorKo},
+            pdftitle={\ThesisTitle},
+            pdfsubject={\ThesisTitle: \ThesisSubtitle},
             pdfkeywords={서울대학교, 공과대학, 컴퓨터공학부, 졸업논문, SNU, ENG, CSE, thesis, k-means},
             ]{hyperref}
 
@@ -73,3 +73,42 @@
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{1em}
+
+% Abstract page layout
+% Title block and author block for the English abstract
+\newcommand{\EnglishAbstractHeader}{%
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\vspace*{-1.1cm}
+{
+\centering
+\fontsize{22pt}{22pt}\selectfont \ThesisTitle: \\
+\fontsize{18pt}{20pt}\selectfont \ThesisSubtitle \\
+}
+
+\vspace*{0.8cm}
+
+{
+\flushright
+\fontsize{14pt}{16pt}\selectfont
+\AuthorEn \\
+Computer Science and Engineering \\ 
+College of Engineering \\
+Seoul National University \\
+}
+\vspace*{0.8cm}
+}
+
+\newcommand{\KoreanAbstractHeader}{%
+\chapter*{국문초록}
+\addcontentsline{toc}{chapter}{국문초록}
+}
+
+% Keywords line at the bottom of each abstract
+\newcommand{\EnglishKeywords}[1]{%
+\vfill
+\textbf{Keywords: #1}}
+
+\newcommand{\KoreanKeywords}[1]{%
+\vspace*{1cm}
+\textbf{주요어: #1}}
